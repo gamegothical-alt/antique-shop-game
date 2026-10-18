@@ -220,6 +220,26 @@ button:focus-visible,input:focus-visible{outline:2px solid #f1d58b;outline-offse
 @media(max-width:390px){.w{padding-left:11px;padding-right:11px}.sign{font-size:20px;padding:14px 8px}.scene{padding:13px 10px 15px}.stage{min-height:248px;padding-top:22px}.it{min-width:128px;min-height:128px}.it svg{width:138px;height:138px}.btns{gap:6px}.btns button{font-size:12px;padding:10px 4px}.cash{font-size:14px;padding:6px 7px}.av{width:50px;height:50px;flex-basis:50px}.bub{font-size:12px;padding:9px 10px}.slot{height:70px}}
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;scroll-behavior:auto!important;transition-duration:.01ms!important}}
 
+
+/* ===== LIVE PATCH: stronger cinematic boutique art direction ===== */
+html{background:#100906!important}
+body{background-color:#100906!important;background-image:radial-gradient(ellipse at 50% 8%,rgba(244,202,112,.19),transparent 28%),radial-gradient(ellipse at 0% 55%,rgba(112,36,27,.22),transparent 36%),repeating-linear-gradient(90deg,rgba(230,190,120,.035) 0 2px,transparent 2px 10px),linear-gradient(180deg,#24140e 0%,#100a08 70%,#1c100b 100%)!important}
+body::before{opacity:.5;background:repeating-linear-gradient(0deg,transparent 0 74px,rgba(221,179,102,.13) 75px 77px,transparent 78px 148px),repeating-linear-gradient(90deg,transparent 0 48px,rgba(0,0,0,.34) 49px 53px,transparent 54px 100px),radial-gradient(ellipse at 50% 0%,rgba(255,226,164,.15),transparent 54%)}
+.sign{min-height:82px;display:flex;align-items:center;justify-content:center;text-shadow:0 2px 18px #f2ca7844;box-shadow:0 18px 36px #000b,inset 0 1px 0 #f7e2a766,inset 0 -15px 24px #0008}
+.scene{border:1px solid #e0bd70!important;background:radial-gradient(ellipse at 50% 28%,rgba(255,218,143,.22),transparent 35%),radial-gradient(ellipse at 50% 72%,rgba(115,50,31,.20),transparent 48%),repeating-linear-gradient(90deg,rgba(255,230,180,.018) 0 1px,transparent 1px 6px),linear-gradient(145deg,#382319 0%,#21130d 50%,#301b12 100%)!important;box-shadow:0 24px 50px #000b,inset 0 0 0 5px #d6b66f12,inset 0 0 0 7px #0006!important}
+.scene::before{inset:10px!important;border:1px solid #d8b56c55!important;background:linear-gradient(135deg,transparent 0 38%,#f9e2a10a 50%,transparent 62%)!important}
+.stage{min-height:300px!important;margin-top:18px!important;padding-top:30px!important;background:radial-gradient(ellipse at 50% 46%,rgba(255,218,145,.18),transparent 40%),linear-gradient(180deg,#0002,transparent 35%,#0004)!important}
+.stage::before{width:min(330px,95%);height:300px;top:-8px;background:radial-gradient(ellipse at 50% 42%,rgba(255,226,165,.34),rgba(210,156,64,.11) 38%,transparent 70%)!important;filter:blur(1px)}
+.it{min-height:160px!important;filter:drop-shadow(0 20px 12px #000c) drop-shadow(0 0 25px #eac16d66)!important}
+.it svg{width:164px!important;height:164px!important;filter:drop-shadow(0 2px 0 #fff3) drop-shadow(0 8px 12px #0006)}
+.ped{width:min(205px,72%)!important;height:17px!important;background:linear-gradient(180deg,#fff0bd,#c49a4e 32%,#70431f 58%,#24150c)!important;box-shadow:0 6px 0 #2c190e,0 12px 22px #000b,0 0 30px #e4b85d2b!important}
+.nm{color:#f6dfaa!important;text-shadow:0 2px 15px #000b!important}
+.btns button{box-shadow:0 7px 16px #0005,inset 0 1px 0 #fff9}
+.shelf{background:repeating-linear-gradient(90deg,transparent 0 42px,#ffffff08 43px 45px),linear-gradient(145deg,#3b2619,#170d09 78%)!important;box-shadow:0 18px 35px #0008,inset 0 0 0 4px #d2ad5d10,inset 0 1px 0 #e9ca8255!important}
+.row{border-bottom-color:#694321!important;box-shadow:0 4px 0 #080504,0 8px 15px #0008!important}
+.slot{background:radial-gradient(ellipse at 50% 40%,#eac16d14,transparent 70%)!important}
+@media(max-width:390px){.stage{min-height:270px!important}.it svg{width:148px!important;height:148px!important}}
+
 </style>
 </head>
 <body>
