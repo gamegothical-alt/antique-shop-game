@@ -240,6 +240,32 @@ body::before{opacity:.5;background:repeating-linear-gradient(0deg,transparent 0 
 .slot{background:radial-gradient(ellipse at 50% 40%,#eac16d14,transparent 70%)!important}
 @media(max-width:390px){.stage{min-height:270px!important}.it svg{width:148px!important;height:148px!important}}
 
+
+.rarity{display:table;margin:3px auto 5px;padding:3px 10px;border:1px solid #c5a15c55;background:linear-gradient(90deg,transparent,#c39a4b18,transparent);color:#d9bb79;font-size:10px;letter-spacing:.7px;text-transform:uppercase}
+/* ===== V3: Boutique RPG UI overhaul — layout, hierarchy, mobile safe areas ===== */
+:root{--ink:#f5e8cc;--card:#21150f;--w1:#170d09;--w2:#28170f;--acc:#8d2636;--wood:#d4b16a;--wood2:#5b3b21;--mute:#c7b28b;--glow:rgba(241,197,105,.24)}
+html{background:#100906!important;min-height:100%;-webkit-text-size-adjust:100%;}
+body{min-height:100svh;padding-bottom:calc(18px + env(safe-area-inset-bottom,0px));color:#f5e8cc!important;background:radial-gradient(ellipse at 50% 0%,#5a321b55,transparent 38%),linear-gradient(180deg,#21130d,#0e0907 78%,#24140c)!important;background-attachment:scroll!important}
+body::before{opacity:.42;background:repeating-linear-gradient(0deg,transparent 0 64px,#d7b56a13 65px 66px,transparent 67px 132px),repeating-linear-gradient(90deg,transparent 0 52px,#0005 53px 57px,transparent 58px 110px),radial-gradient(ellipse at 50% 12%,#ffe1a51a,transparent 56%)}
+.awn{height:5px;margin-bottom:12px;background:linear-gradient(90deg,#49141d,#9d6f31,#f4d98c,#9d6f31,#49141d);box-shadow:0 3px 16px #000b}
+.w{max-width:560px;padding:10px 13px calc(28px + env(safe-area-inset-bottom,0px))}
+.sign{margin:10px auto 17px;padding:12px 10px;min-height:64px;font-size:clamp(20px,5vw,27px);letter-spacing:.4px;background:linear-gradient(145deg,#43281a,#1b100b 68%,#2e1a10);border:1px solid #d7b66c;outline:1px solid #76562e;outline-offset:3px;box-shadow:0 12px 28px #0009,inset 0 1px 0 #ffedc033}
+.stat{display:grid;grid-template-columns:minmax(0,1fr) auto auto;gap:8px;margin:10px 0 12px}.day{font-size:12px}.cash{font-size:15px;padding:6px 8px}.mu{font-size:15px;padding:5px 8px;min-height:38px}.msg{font-size:12px;min-height:28px;line-height:1.55;margin-bottom:9px}
+.scene{padding:12px 11px 14px;border:1px solid #b99451!important;border-radius:5px!important;background:radial-gradient(ellipse at 50% 38%,#9b692b24,transparent 44%),linear-gradient(145deg,#302016,#17100c 58%,#28170f)!important;box-shadow:0 18px 38px #0009,inset 0 0 0 4px #e0bd7010,inset 0 0 0 6px #0005!important}
+.scene::before{inset:7px!important;border:1px solid #d8b56c32!important}
+.cus{gap:10px;margin:2px 2px 0}.av{width:48px;height:48px;flex-basis:48px;box-shadow:0 0 0 3px #d3b16a18,0 5px 12px #0008}.bub{padding:9px 11px;font-size:12px;line-height:1.55;border-radius:3px 10px 3px 10px}
+.stage{min-height:0!important;margin:12px -1px 0!important;padding:15px 5px 11px!important;border-top:1px solid #d1ad6235;border-bottom:1px solid #d1ad6235;background:radial-gradient(ellipse at 50% 40%,#d6a64b20,transparent 48%),linear-gradient(180deg,#0002,transparent 35%,#0003)!important;overflow:hidden}
+.stage::before{width:min(280px,90%);height:220px;top:-8px;background:radial-gradient(ellipse at 50% 42%,#ffe2a53d,#d29c4012 43%,transparent 72%)!important;filter:blur(2px)}
+.stage::after{height:34px;bottom:0}
+.it{min-width:0!important;min-height:clamp(112px,34vw,158px)!important;filter:drop-shadow(0 16px 9px #000b) drop-shadow(0 0 20px #eac16d55)!important}.it svg{width:clamp(124px,39vw,158px)!important;height:clamp(124px,39vw,158px)!important;max-width:100%;filter:drop-shadow(0 2px 0 #fff3) drop-shadow(0 7px 10px #0007)}
+.ped{margin:0 auto 8px!important;width:min(175px,68%)!important;height:14px!important}.nm{font-size:clamp(20px,5.4vw,24px)!important;margin:7px 0 2px!important;color:#f4dca5!important}.nm::after{margin-top:5px!important;width:66px!important}.sub{font-size:12px!important;line-height:1.6!important;color:#cbb995!important}.cert{margin-top:8px!important;padding:7px 8px!important;font-size:11px!important;line-height:1.55!important}.tag{margin-top:9px!important;padding:5px 18px!important;font-size:18px!important;box-shadow:0 3px 0 #563a1c,0 5px 12px #0005!important}
+.btns{grid-template-columns:repeat(3,minmax(0,1fr))!important;gap:7px!important;margin-top:13px!important}.btns button{min-height:48px;padding:9px 4px!important;font-size:12px!important;line-height:1.35!important;border-radius:3px!important;overflow-wrap:anywhere}
+.shelf{margin-top:15px!important;padding:12px 10px 3px!important;background:linear-gradient(145deg,#322116,#130c09 80%)!important}.shelf h3{font-size:15px!important;margin-bottom:9px!important}.row{gap:5px!important;margin-bottom:10px!important;border-bottom-width:7px!important}.slot{height:65px!important}.slot svg{width:36px!important;height:36px!important}.slot small{font-size:9px!important}.foot{font-size:10px;margin-top:12px}
+.fact{font-size:12px!important;line-height:1.55!important;padding:9px 10px!important}.pop{z-index:8!important;font-size:25px!important}.end.scene{padding:24px 13px!important}
+@media(max-width:390px){.w{padding-left:10px;padding-right:10px}.scene{padding:10px 9px 12px!important}.stage{padding-top:12px!important}.it svg{width:126px!important;height:126px!important}.btns{gap:5px!important}.btns button{font-size:11px!important;padding:8px 3px!important}.cash{font-size:13px!important}.shelf{padding-left:8px!important;padding-right:8px!important}}
+@media(min-width:500px){.scene{padding:18px!important}.stage{padding-top:24px!important}.it svg{width:170px!important;height:170px!important}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}}
+
 </style>
 </head>
 <body>
@@ -441,7 +467,7 @@ function render(){
   const btn=e.t=="sell"?`<button class="p" onclick="act('yes')" ${s.cash<e.ask?"disabled":""}>ซื้อ</button><button onclick="act('hag')" ${e.hag?"disabled":""}>ต่อรอง (ลด 20%)</button><button onclick="act('no')">ไม่ซื้อ</button>`:`<button class="p" onclick="act('yes')">ขาย</button><button onclick="act('hag')" ${e.hag?"disabled":""}>ขอเพิ่ม (+20%)</button><button onclick="act('no')">ไม่ขาย</button>`;
   const tr=(s.day-1)/29*100;
   const cert=e.claim?`<div class="cert">📜 ผู้ขายอ้างว่า: “${e.claim.c}”</div>`:"";
-  a.innerHTML=`<div class="stat"><div class="day">📅 วันที่ ${s.day}/30<div class="trk"><b style="width:${tr}%"></b><span style="left:${tr}%">☀️</span></div></div><button class="mu" onclick="tg()">${mute?"🔇":"🔊"}</button><div class="cash" style="${s.cash<0?"color:var(--bad)":""}">🪙 ${f(s.cash)}</div></div><div class="msg">${s.msg}</div>${s.fact?`<div class="fact ${s.fact.ok===true?"ok":s.fact.ok===false?"no":""}">${s.fact.t}</div>`:""}<div class="scene" id="sc">${sp}<div class="cus"><div class="av">${portrait(e.av)}</div><div class="bub">“${e.say}”</div></div><div class="stage"><span class="it">${ico(it,124)}</span><div class="ped"></div><div class="nm">${it.n}</div><div class="sub">${info}</div>${cert}<div class="tag">${tag}</div></div><div class="btns">${btn}</div></div>${shelf()}<div class="foot">ค่าเช่าร้าน ฿100 ทุกวันที่ 7, 14, 21, 28</div>`;
+  a.innerHTML=`<div class="stat"><div class="day">📅 วันที่ ${s.day}/30<div class="trk"><b style="width:${tr}%"></b><span style="left:${tr}%">☀️</span></div></div><button class="mu" onclick="tg()">${mute?"🔇":"🔊"}</button><div class="cash" style="${s.cash<0?"color:var(--bad)":""}">🪙 ${f(s.cash)}</div></div><div class="msg">${s.msg}</div>${s.fact?`<div class="fact ${s.fact.ok===true?"ok":s.fact.ok===false?"no":""}">${s.fact.t}</div>`:""}<div class="scene" id="sc">${sp}<div class="cus"><div class="av">${portrait(e.av)}</div><div class="bub">“${e.say}”</div></div><div class="stage"><span class="it">${ico(it,124)}</span><div class="ped"></div><div class="nm">${it.n}</div><div class="rarity">${rare?"✦ ของสะสมหายาก ✦":"◆ ของเก่าสำหรับนักสะสม ◆"}</div><div class="sub">${info}</div>${cert}<div class="tag">${tag}</div></div><div class="btns">${btn}</div></div>${shelf()}<div class="foot">ค่าเช่าร้าน ฿100 ทุกวันที่ 7, 14, 21, 28</div>`;
   if(s.fx){const p=document.createElement("div");p.className="pop "+s.fx.c;p.textContent=s.fx.t;document.getElementById("sc").appendChild(p);s.fx=null}
 }
 start();
